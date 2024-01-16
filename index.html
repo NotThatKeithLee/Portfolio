@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith Lee Portfolio</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact Me</a>
+        <a href="./about.html">About me</a> 
+    </div>
+    <center>
+        <h1>Welcome to Keith Lee's Portfolio!</h1>
+        <p>No, not THAT Keith Lee!</p>
+    </center>
+    <hr>
+
+    <div id="wrapper">
+        <div id="first">
+            <div class="module">
+                <img src="./Images and Icons/Schwab Intelligent Portfolios.png" width="100%" class="moduleImage">
+                <button type="button" class="collapseModule">
+                    Schwab Intelligent Portfolios & Premium
+                </button>
+                <div class="moduleInfo">
+                    Description coming soon!
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="module">
+                <img src="./Images and Icons/SPI-Image.png" width="100%" class="moduleImage">
+                <button type="button" class="collapseModule">
+                    Schwab Personalized Indexing
+                </button>
+                <div class="moduleInfo">
+                    Description coming soon!
+                </div>
+            </div>
+        </div>
+        <div id="third">
+            <div class="module">
+                <img src="./Images and Icons/Schwab Intelligent Portfolios.png" width="100%" class="moduleImage">
+                <button type="button" class="collapseModule">
+                    Schwab Wealth Advisory
+                </button>
+                <div class="moduleInfo">
+                    Description coming soon!
+                </div>
+            </div>
+            <script>
+                btn[0].addEventListener("click", function () {
+                this.classList.toggle("activeModule");
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+            </script>
+        </div>
+    </div>
+    <h3>UBS</h3>
+    <p>UBS Wealth Way</p>
+    <p>Financial Planning</p>
+    <p>Client Discovery</p>
+    <h3>J.P. Morgan Chase</h3>
+    <p>Risk Report Repository</p>
+    <h3>Thomson Reuters</h3>
+    <p>GoldTier (KYCaaS)</p>
+    <hr>
+</body>
+</html>
